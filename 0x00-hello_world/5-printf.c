@@ -3,6 +3,8 @@
  * main: Entry point
  *
  * printf: Prints output
+ *
+ * Return: Always 0
  */
 int main(void)
 {
