@@ -6,21 +6,25 @@
  */
 int main(void)
 {
-	long int n1, n2, fn, afn;
+	unsigned long int sum3, sum5, sum;
+	int i;
 
-	n1 = 1;
-	n2 = 2;
-	fn = afn = 0;
-	while (fn <= 4000000)
+	sum3 = 0;
+	sum5 = 0;
+	sum = 0;
+
+	for (i = 0; i < 1024; ++i)
 	{
-		fn = n1 + n2;
-		n1 = n2;
-		n2 = fn;
-		if ((n1 % 2) == 0)
+		if ((i % 3) == 0)
 		{
-			afn += n1;
+			sum3 = sum3 + i;
+		}
+		else if ((i % 5) == 0)
+		{
+			sum5 = sum5 + i;
 		}
 	}
-	printf("%ld\n", afn);
+	sum = sum3 + sum5;
+	printf("%lu\n", sum);
 	return (0);
 }
