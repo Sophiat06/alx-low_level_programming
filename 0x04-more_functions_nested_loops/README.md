@@ -1,1 +1,1 @@
-C more functions more nested loops task
+C more functions and more nested loops
