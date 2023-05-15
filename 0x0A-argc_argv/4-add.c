@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 	{
 		if (check_num(argv[count]))
 		{
-			str_to_int = _atoi(argv[count]);
+			str_to_int = atoi(argv[count]);
 			sum += str_to_int;
 		}
 		else
