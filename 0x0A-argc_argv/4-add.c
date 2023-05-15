@@ -3,12 +3,12 @@
 #include <ctype.h>
 #include <string.h>
 /**
- * check_number - check strings for digit
+ * check_num - check strings for digit
  * @str: array string
  *
  * Return: Always 0
  */
-int check_number(char *str)
+int check_num(char *str)
 {
 	unsigned int count;
 
@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 
 	while (count < argc)
 	{
-		if (check_number(argv[count]))
+		if (check_num(argv[count]))
 		{
 			str_to_int = _atoi(argv[count]);
 			sum += str_to_int;
